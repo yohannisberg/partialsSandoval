@@ -1,0 +1,77 @@
+
+
+// 
+.carouselContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+}
+.carouselTitle{
+  font-family:Pacifico;
+  font-size:36px;
+  margin:20px auto;
+  text-align:center;
+}
+.quoteWrap{
+  background:#fff;
+  color:#3498db;
+  font-size:36px;
+  // line-height:100px;
+  line-height:1.2em;
+  margin:10px;
+  padding:2%;
+  position:relative;
+}
+  .quote {
+    font-size: 70%;
+    height: 70%;
+    background-color: rgba(red, 0.3);
+  }
+  .authorTitle {
+    font-size: 70%;
+    width: 70%;
+    background-color: rgba(red, 0.3);
+  }
+
+.center .slick-center .quoteWrap{
+  color:#e67e22;
+  opacity:1;
+}
+
+  .center .slick-center .quoteWrap .quote {
+    // font-size: 90%;
+    // width: 90%;
+  }
+
+  .center .slick-center .quoteWrap .author {
+    // font-size: 90%;
+    // width: 90%;
+
+  }
+
+  .center .slick-center .quoteWrap .authorTitle {
+    // font-size: 90%;
+    // width: 90%;
+
+  }
+
+.clipCarousel{
+    overflow: hidden;
+    bottom: 0;
+    display: flex;
+    margin: 0 15px;
+    align-items: center;
+    height:100%;
+}
+
+.quoteWrap{
+        display: flex;
+        height: auto;
+        // justify-content: center;
+        flex-direction: column;
+}
+
+.slick-initialized .slick-track{
+  display: flex;
+  align-items: center;
+}
