@@ -1,0 +1,28 @@
+.topTest{
+	position: absolute;
+	right:0;
+}
+
+.footerWrapper{
+	width:100%;
+	background-color: gray;
+}
+
+.footerMenuWrapper{
+	display: flex;
+	flex-direction: row;
+	padding:5% 0 14% 14%;
+	color: white;
+}
+
+.footerMenuWrapper ul{
+	margin-right:6%;
+}
+
+.footerMenuWrapper ul li{
+	line-height: 1.8em;
+}
+
+.footerTitle{
+	text-transform: uppercase;
+}

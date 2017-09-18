@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="./styles/missionStatement.css">
 	<link rel="stylesheet" type="text/css" href="./styles/about.css">
 	<link rel="stylesheet" type="text/css" href="./styles/carousel.css">
+	<link rel="stylesheet" type="text/css" href="./styles/footer.css">
 
 	<!-- Slick -->
 	<link rel="stylesheet" href="/styles/slick/slick.css">
@@ -37,15 +38,15 @@
 
 <!-- Mission Statement -->
 
-<!-- <div class="missionStatementWrapper">
+<div class="missionStatementWrapper">
 	<div class="missionStatementTitle">Who we are</div>
 	<div class="missionStatement">As Management, Operations and Supply Chain consultants, we help clients enable people, processes and technologies to improve their performance. <br> Founded in Lean principles and practices- we provide companies the tools to build agile and responsive practices that improve bottom line performance, and cultural transformations.</div>
-</div> -->
+</div>
 
 
  <!-- About -->
 
-<!--  <div class="aboutWrapper">
+ <div class="aboutWrapper">
 	
  	<div class="aboutSkew"></div>
  	
@@ -64,7 +65,7 @@
 		At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
  	</div>
  	</div>
- </div> -->
+ </div>
 
 
 
@@ -138,10 +139,45 @@
 </div>
 
 
+
+<!-- Footer -->
+
+<div class="footerWrapper">
+	
+<div class="footerMenuWrapper">
+	<ul>
+		<li class="footerTitle">Office</li>
+		<li>+2346789</li>
+		<li>978 Hand Heights</li>
+		<li>Chandler, AZ 98789</li>
+		<li>View on Map</li>
+	</ul>
+
+	<ul>
+		<li class="footerTitle">Connect</li>
+		<li>Facebook</li>
+		<li>LinkedIn</li>
+	</ul>
+
+	<ul>
+		<li class="footerTitle">Legal</li>
+		<li>Terms and Conditions</li>
+		<li>Privacy Policy</li>
+	</ul>
+</div>
+
+<a href="" id="top"><div class="topTest">Test</div></a>
+
+</div>
+
+
 <!-- Javascript -->
 
 <script type="text/javascript">
 $(document).ready(function(){
+
+
+// Carousel
 
 $('.center').slick({
   centerMode: true,
@@ -160,6 +196,15 @@ $('.center').on('afterChange', function(event, slick, currentSlide){
 });
 
 });
+
+
+// Scroll to top of page
+
+$("#top").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
+  return false;
+});
+
 </script>
 
 </body>
