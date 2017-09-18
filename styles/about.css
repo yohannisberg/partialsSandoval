@@ -1,10 +1,58 @@
+@media only screen 
+and (min-width : 768px)
+and (max-width: 1024px) {
+
+	.aboutSkewResponsive{
+	width:60%;
+	background-color:gray;
+	clip-path: polygon(0% 100%, 0% 15%, 100% 0%, 100% 85%);
+	padding: 22% 0;
+}
+
+	.aboutSkew{
+	display: none;
+}
+
+.aboutContentWrapper{
+	width:100%;
+	margin:0 10% 10% 10%;
+}
+
+.aboutTitle{
+	font-size: 30px;
+	width:25%;
+	line-height:1.3em;
+	position: relative;
+	right: -55%;
+	top: -28%;
+}
+
+.aboutBorder{
+	border-bottom:.25px solid black;
+	width:15%;
+	margin:1.8em 0;
+	position: relative;
+	right: -55%;
+	top: -28%;
+}
+
 .aboutWrapper{
 	width:100%;
 	height:auto;
 	display:flex;
+	margin-top:-6%;
 }
 
-.aboutSkew{
+}
+
+@media only screen 
+and (min-width : 1025px)  {
+
+	.aboutSkewResponsive{
+	display: none;
+}
+
+	.aboutSkew{
 	width:50%;
 	background-color:gray;
 	clip-path: polygon(0% 70%, 0% 15%, 100% 0%, 100% 55%);
@@ -28,6 +76,15 @@
 	width:15%;
 	margin:1.8em 0;
 }
+
+.aboutWrapper{
+	width:100%;
+	height:auto;
+	display:flex;
+}
+
+}
+
 
 .about{
 	line-height:1.8em;

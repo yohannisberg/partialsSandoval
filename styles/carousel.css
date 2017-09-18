@@ -1,3 +1,47 @@
+@media only screen 
+and (min-width : 768px)
+and (max-width: 1024px) {
+
+.carouselLogosWrapper{
+  width:100%;
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselResponsive{
+  width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+}
+
+
+@media only screen 
+and (min-width : 1025px)  {
+
+.carouselLogosWrapper{
+  width:100%;
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselResponsive{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
+
 .carouselContainer .slick-slider {
   // overflow: hidden;
 }
@@ -108,15 +152,7 @@
   align-items: center;
 }
 
-.carouselLogosWrapper{
-  width:100%;
-  margin: 80px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .carouselLogos{
-  width:12%;
-  padding: 0 2%;
+  width:110px;
+  padding: 2% 2%;
 }
