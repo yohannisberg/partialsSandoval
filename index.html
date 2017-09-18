@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="./styles/about.css">
 	<link rel="stylesheet" type="text/css" href="./styles/carousel.css">
 	<link rel="stylesheet" type="text/css" href="./styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="./styles/accordionMenu.css">
 
 	<!-- Slick -->
 	<link rel="stylesheet" href="/styles/slick/slick.css">
@@ -67,6 +68,54 @@
  	</div>
  </div>
 
+
+<!--  Accordion menu -->
+
+<div class="accordionWrapper">
+ 
+<div class="sectionWrapper">	
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+</div>
+
+<div class="sectionWrapper">	
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+</div>
+
+<div class="sectionWrapper">	
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+</div>
+
+<div class="sectionWrapper">	
+<button class="accordion">Section 4</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+</div>
+
+<div class="sectionWrapper">	
+<button class="accordion">Section 5</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+</div>
+
+<div class="sectionWrapper">	
+<button class="accordion">Section 6</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+</div>
+
+</div>
 
 
 <!-- Carousel-->
@@ -204,6 +253,28 @@ $("#top").click(function() {
   $("html, body").animate({ scrollTop: 0 }, 500);
   return false;
 });
+
+
+// Accordion
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
 
 </script>
 
